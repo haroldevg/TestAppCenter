@@ -12,6 +12,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        AppCenter.start(getApplication(), BuildConfig.APP_CENTER_SECRET, Analytics.class, Crashes.class);
         setContentView(R.layout.activity_main);
     }
 }
